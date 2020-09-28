@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "stacksADT.h"
 
-int main(void){
+int main(){
     unsigned int num;
     int* digit;
     STACK* stack;
@@ -23,7 +23,7 @@ int main(void){
         digit=(int*)popStack (stack);
         printf("%ld", *digit);
     }
-    print("\n");
+    printf("\n");
 
     destroyStack(stack);
     return 0;

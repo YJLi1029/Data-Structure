@@ -31,6 +31,7 @@ bool pushStack(STACK* stack, void* dataInPtr){
     if(!newPtr) return false;
     newPtr->dataPtr=dataInPtr;
     newPtr->link=stack->top;
+    stack->top=newPtr;
     (stack->count)++;
     return true;
 }

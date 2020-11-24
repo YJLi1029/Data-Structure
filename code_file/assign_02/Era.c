@@ -1,11 +1,8 @@
-/*에라토스테네스의 체(Eratosthenes' sieve) 문제를 구현하시오.
-(PPT p.29의 queue applications 내용을 참고하여 2~100까지의 수 가운데 소수(prime number)를 찾아 queue에 저장하고, 이를 화면에 출력)*/
-
 #include <stdio.h>
 #include "queuesADT.h"
 
 void Era(int num){//에라토스테네스의 체에 관한 함수
-    int *arr;
+    int* arr;
     arr=(int*)malloc(sizeof(int) * num);//배열 공간 할당
     arr[0]=arr[1]=0;//0 과 1에 해당하는 부분 0으로 초기화
 
@@ -28,9 +25,7 @@ void Era(int num){//에라토스테네스의 체에 관한 함수
     }
 }
 
-
 int main(){
 
     Era(100);
-
 }
